@@ -34,8 +34,8 @@ for note in notes
     if 1 <= cnotes[c + 1][2] <= 96 && samecolor[cnotes[c + 1][2], note[1]] != 0
       samecolor[cnotes[c + 1][2], note[1]] += 1
     end
-    if 1 <= cnotes[2 - c][2] <= 96 && diffcolor[cnotes[c + 1][2], note[1]] != 0
-      diffcolor[cnotes[c + 1][2], note[1]] += 1
+    if 1 <= cnotes[2 - c][2] <= 96 && diffcolor[cnotes[2 - c][2], note[1]] != 0
+      diffcolor[cnotes[2 - c][2], note[1]] += 1
     end
     if 1 <= cnotes[c + 1][1] <= 96 && samecolor2[cnotes[c + 1][1], note[1]] != 0
       samecolor2[cnotes[c + 1][1], note[1]] += 1
